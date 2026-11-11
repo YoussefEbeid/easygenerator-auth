@@ -37,12 +37,6 @@ npm install
 npm run start:dev
 ```
 
-Generate a secret for `JWT_SECRET` (32+ characters):
-
-```bash
-node -e "console.log(require('crypto').randomBytes(48).toString('hex'))"
-```
-
 **3. Web app**
 
 ```bash
@@ -52,8 +46,6 @@ npm install
 npm run dev
 ```
 
-- App: http://localhost:5173
-- API docs (Swagger): http://localhost:3000/api/docs
 
 Vite proxies `/api` to the API, so the browser sees a single origin and the session cookie works without extra CORS setup.
 
